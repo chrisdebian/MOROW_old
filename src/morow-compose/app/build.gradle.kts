@@ -18,6 +18,9 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        manifestPlaceholders["appAuthRedirectScheme"] = "com.example.morow"
+
     }
 
     buildTypes {
@@ -27,6 +30,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
         }
     }
     compileOptions {
@@ -61,6 +65,8 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation("org.maplibre.gl:android-sdk:11.5.1")
     implementation("org.ramani-maps:ramani-maplibre:0.8.1")
+    implementation("net.openid:appauth:0.11.1")
+    implementation("de.westnordost:osmapi:5.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,4 +74,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+}
+
+configurations {
+    all {
+        exclude(group = "net.sf.kxml", module = "kxml2")
+        exclude(group = "xmlpull", module = "xmlpull")
+    }
 }
