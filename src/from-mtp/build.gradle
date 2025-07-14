@@ -29,3 +29,9 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+plugins {
+    id 'com.github.ben-manes.versions' version '8.14.3'
+    // other plugins...
+}
+
