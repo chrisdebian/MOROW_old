@@ -11,7 +11,6 @@ MOROW= “Maintaining our Rights of Way”
 
 Nick Whitelegg- Made a previous attempt at Android mobile app, with the aim of mapping ROWs in England and Wales. It shows OSM-mapped paths overlaid on open council data, allowing users to identify gaps – and with a background layer of OS Open Data or historic maps; the latter may no longer work. https://gitlab.com/nickw1/mapthepaths-android. MOROW Investigation work is here https://gitlab.com/nickw1/mapthepaths-android/-/commits/morow-investigation 
 
-Nick suggested we might want to look at https://mapthepaths.org.uk/app.html for what it can do, as of now. The https://mapthepaths.org.uk/ site might also be of interest.
 
 Nick is on the OSM-GB mailing list, but I (chris_debian) have his personal email address.
 
